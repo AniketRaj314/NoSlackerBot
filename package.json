@@ -15,6 +15,7 @@
 		"nodemon": "^2.0.22"
 	},
 	"dependencies": {
-		"@slack/bolt": "^3.13.0"
+		"@slack/bolt": "^3.13.0",
+		"openai": "^3.2.1"
 	}
 }
