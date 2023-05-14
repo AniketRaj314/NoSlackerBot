@@ -20,9 +20,20 @@ const PROMPTS = {
     Expected Output:
     "Test the new Task Automation Slackbot"
     
-    Based on the example above, can you return the string with task name has to do based on the following array of conversation:
+    Based on the example above, can you return the string with task name {{USER_ID}} has to do based on the following array of conversation (do note that a task can be self assigned in the conversation):
     
     {{ENTER PROMPT HERE}}`,
+
+	prioritize_tasks: `This is an array of tasks a user needs to perform:
+
+    1. taskName has the name of the Task
+    2. conversationObject is a conversation made between others and our user
+    
+    The conversationObject will help you understand the urgency and size of the task that needs to be done.
+    
+    Could you rearrange the order of the array below and print the exact array so that the most important task needs to complete comes first?
+    
+    {{ENTER TASK LIST HERE}}`,
 };
 
 module.exports = PROMPTS;
